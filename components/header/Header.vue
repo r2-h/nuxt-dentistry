@@ -17,7 +17,7 @@ import UserDropdown from "./UserDropdown.vue"
 
     <div class="hidden lg:flex items-center gap-x-5">
       <UserDropdown />
-      <Button> Book Now </Button>
+      <Button :disabled="true"> Book Now </Button>
     </div>
 
     <!-- <DMobileMenu /> -->

@@ -12,6 +12,9 @@ const button = cva("relative inline-flex items-center text-white h-[3.43rem]", {
       secondary: " bg-blue-dark rounded",
       danger: "bg-red-500 ",
     },
+    disabled: {
+      true: "bg-gray-300 cursor-not-allowed",
+    },
   },
 })
 type ButtonProps = VariantProps<typeof button>
@@ -22,11 +25,16 @@ const { intent = "primary", tag = "button" } = defineProps<{
   rightNode?: object
   loading?: boolean
   tag?: string
+  disabled?: boolean
 }>()
 </script>
 
 <template>
-  <component :is="tag" @click="$emit('action')" :class="button({ intent })">
+  <component
+    :is="tag"
+    @click="$emit('action')"
+    :class="button({ intent, disabled })"
+  >
     <span v-if="loading" class="absolute flex left-1/2 -translate-x-1/2">
       <IconsLoading />
     </span>
