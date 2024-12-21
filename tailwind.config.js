@@ -16,10 +16,13 @@ export default {
       },
       colors: {
         blue: {
-          DEFAULT: "#1376f8",
+          mid: "#1376f8",
           dark: "#011632",
           sky: "#25b4f8",
           light: "#e6f6fe",
+        },
+        green: {
+          success: "#17BF28",
         },
         white: "#fff",
         text: "#3c4959",
@@ -96,6 +99,34 @@ export default {
             fontWeight: "400",
           },
         ],
+      },
+      maxWidth: {
+        max: "90rem",
+        content: "80rem",
+      },
+      width: {
+        12.5: "3.125rem",
+        94: "23.5rem",
+      },
+      padding: {
+        4.5: "1.125rem",
+      },
+      boxShadow: {
+        userMessageCard: "0 8px 40px 0 rgba(0, 0, 0, 10%)",
+        firstScreenCircle: "0 4px 4px 0 rgba(0, 0, 0, 10%)",
+      },
+      animation: {
+        "spin-slow": "spin 100s linear infinite",
+        "spin-slow-reverse": "spin-reverse 100s linear infinite",
+      },
+      keyframes: {
+        "spin-reverse": {
+          "0%": { transform: "rotate(360deg)" },
+          "100%": { transform: "rotate(0deg)" },
+        },
+      },
+      borderRadius: {
+        lg2: "0.625rem",
       },
     },
   },
