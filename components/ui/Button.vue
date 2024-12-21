@@ -1,10 +1,14 @@
 <script setup lang="ts">
 import { cva, type VariantProps } from "class-variance-authority"
 
+defineEmits<{
+  (e: "action"): void
+}>()
+
 const button = cva("relative inline-flex items-center text-white h-[3.43rem]", {
   variants: {
     intent: {
-      primary: "bg-blue-mid rounded-lg2",
+      primary: "bg-blue-mid rounded-lg2 font-semibold text-b2 px-[30px]",
       secondary: " bg-blue-dark rounded",
       danger: "bg-red-500 ",
     },
@@ -12,16 +16,12 @@ const button = cva("relative inline-flex items-center text-white h-[3.43rem]", {
 })
 type ButtonProps = VariantProps<typeof button>
 
-const { intent = "secondary", tag = "button" } = defineProps<{
+const { intent = "primary", tag = "button" } = defineProps<{
   intent?: ButtonProps["intent"]
   leftNode?: object
   rightNode?: object
   loading?: boolean
   tag?: string
-}>()
-
-defineEmits<{
-  (e: "action"): void
 }>()
 </script>
 
