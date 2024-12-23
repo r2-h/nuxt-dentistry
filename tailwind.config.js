@@ -24,8 +24,10 @@ export default {
         green: {
           success: "#17BF28",
         },
+        gray: {
+          body: "#3c4959",
+        },
         white: "#fff",
-        text: "#3c4959",
         success: "#17bf28",
         warnint: "#ec942c",
         error: "#e52323",
@@ -40,7 +42,7 @@ export default {
           },
         ],
         h2: [
-          "2.5rem",
+          "2.62rem",
           {
             lineHeight: "1.25",
             letterSpacing: "0",
@@ -104,13 +106,6 @@ export default {
         max: "90rem",
         content: "80rem",
       },
-      width: {
-        12.5: "3.125rem",
-        94: "23.5rem",
-      },
-      padding: {
-        4.5: "1.125rem",
-      },
       boxShadow: {
         userMessageCard: "0 8px 40px 0 rgba(0, 0, 0, 10%)",
         firstScreenCircle: "0 4px 4px 0 rgba(0, 0, 0, 10%)",
@@ -127,6 +122,18 @@ export default {
       },
       borderRadius: {
         lg2: "0.625rem",
+      },
+      spacing: {
+        4.5: "1.125rem",
+        5.5: "1.375rem",
+        7.5: "1.875rem",
+        8.5: "2.125rem",
+        12.5: "3.125rem",
+        94: "23.5rem",
+
+      },
+      screens: {
+        xs: "26.75rem",
       },
     },
   },

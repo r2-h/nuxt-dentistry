@@ -1,13 +1,8 @@
-<script setup lang="ts">
-import Footer from "~/components/footer/Footer.vue"
-</script>
-
 <template>
   <div class="flex flex-col min-h-screen max-w-max mx-auto">
     <Header />
     <main class="flex-grow flex flex-col">
       <slot />
     </main>
-    <Footer />
   </div>
 </template>

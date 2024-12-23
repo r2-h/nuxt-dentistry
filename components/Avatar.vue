@@ -8,8 +8,8 @@ const isActiveUser = true
 </script>
 
 <template>
-  <div class="rounded-full relative size-[3.43rem] bg-gray-200">
-    <img :src="user.icon" alt="user icon" />
+  <div class="relative size-[3.43rem]">
+    <img :src="user.icon" alt="user icon" class="rounded-full bg-gray-200" />
     <div
       v-if="isActiveUser"
       class="absolute bg-green-success size-2.5 top-0 right-1.5 rounded-full z-10 border border-white"

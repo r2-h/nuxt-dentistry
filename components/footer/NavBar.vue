@@ -4,13 +4,9 @@ import { navItems } from "../constants"
 
 <template>
   <nav>
-    <ul class="flex items-center gap-x-9 text-b2">
+    <ul class="flex items-center gap-x-10">
       <li v-for="item in navItems" :key="item.id">
-        <NuxtLink
-          :to="item.route"
-          exactActiveClass="font-semibold"
-          class="text-blue-dark"
-        >
+        <NuxtLink :to="item.route" class="text-b2 font-medium text-gray-body">
           {{ item.title }}
         </NuxtLink>
       </li>

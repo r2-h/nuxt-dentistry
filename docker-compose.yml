@@ -1,0 +1,12 @@
+version: "3.9"
+name: "dentistry"
+services:
+  postgres:
+    container_name: dentistry
+    image: postgres:16-alpine3.19
+    environment:
+      POSTGRES_DB: "dentistry"
+      POSTGRES_USER: "root"
+      POSTGRES_PASSWORD: "root"
+    ports:
+      - "5432:5432"
