@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import MainIcon from "../icons/MainIcon.vue";
+import MobileNavBar from "../layout/MobileNavBar.vue";
 import Button from "../ui/Button.vue";
 import MobileMenu from "./MobileMenu.vue";
 import NavBar from "./NavBar.vue";
@@ -38,10 +39,7 @@ const onCloseMobileMenu = () => {
         </Button>
       </template>
       <template #content>
-        <NavBar
-          class="flex h-full flex-col justify-center gap-y-9"
-          @onCloseMobileMenu="onCloseMobileMenu"
-        />
+        <MobileNavBar @onCloseMobileMenu="onCloseMobileMenu" />
       </template>
     </MobileMenu>
 
