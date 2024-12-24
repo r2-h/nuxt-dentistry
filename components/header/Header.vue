@@ -13,7 +13,6 @@ const toggleActive = () => {
 
 const onCloseMobileMenu = () => {
   isActiveMobileMenu.value = false
-  console.log(`isActiveMobileMenu->`, isActiveMobileMenu.value)
 }
 </script>
 
@@ -30,7 +29,7 @@ const onCloseMobileMenu = () => {
     <MobileMenu :isActive="isActiveMobileMenu">
       <template #trigger>
         <Button
-          class="peer-checked:*:bg-blue-600 z-50 p-3"
+          :_class="`${isActiveMobileMenu && 'bg-blue-600 '} p-3 z-30`"
           size="icon"
           tag="div"
           @action="toggleActive"

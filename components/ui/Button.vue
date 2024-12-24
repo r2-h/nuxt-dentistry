@@ -15,7 +15,7 @@ const button = cva("relative inline-flex items-center  w-full justify-center", {
     },
     size: {
       lg: "px-[30px] h-[3.43rem]",
-      icon: ''
+      icon: "",
     },
     disabled: {
       true: "bg-gray-300 cursor-not-allowed",
