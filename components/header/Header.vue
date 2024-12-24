@@ -1,25 +1,52 @@
 <script setup lang="ts">
 import MainIcon from "../icons/MainIcon.vue"
 import Button from "../ui/Button.vue"
+import MobileMenu from "./MobileMenu.vue"
 import NavBar from "./NavBar.vue"
 import UserDropdown from "./UserDropdown.vue"
+
+const isActiveMobileMenu = ref(false)
+
+const toggleActive = () => {
+  isActiveMobileMenu.value = !isActiveMobileMenu.value
+}
+
+const onCloseMobileMenu = () => {
+  isActiveMobileMenu.value = false
+}
 </script>
 
 <template>
   <header
-    class="z-10 max-w-content w-full mx-auto px-5 lg:px-10 lg:py-4.5 lg:bg-blue-light rounded-lg my-10 flex items-center justify-between"
+    :class="[
+      'z-10 max-w-content rounded-lg w-full mx-auto px-5 mt-12 flex items-center justify-between',
+      'md:bg-blue-light md:px-10 md:py-4.5 md:mt-10',
+    ]"
   >
-    <MainIcon class="hidden lg:flex" />
+    <MainIcon />
+    <NavBar class="hidden md:flex" />
 
-    <!-- <DHeaderMobileVision class="lg:hidden" /> -->
+    <MobileMenu :isActive="isActiveMobileMenu">
+      <template #trigger>
+        <Button
+          class="peer-checked:*:bg-blue-600 z-50 p-3"
+          tag="div"
+          @action="toggleActive"
+        >
+          <IconsBurgerMenu />
+        </Button>
+      </template>
+      <template #content>
+        <NavBar
+          class="flex-col justify-center flex h-full gap-y-9 bg-red-300"
+          @onCloseMobileMenu="onCloseMobileMenu"
+        />
+      </template>
+    </MobileMenu>
 
-    <NavBar class="hidden lg:flex" />
-
-    <div class="hidden lg:flex items-center gap-x-5">
+    <div class="hidden md:flex items-center gap-x-5">
       <UserDropdown />
-      <Button :disabled="true"> Book Now </Button>
+      <Button> Book Now </Button>
     </div>
-
-    <!-- <DMobileMenu /> -->
   </header>
 </template>

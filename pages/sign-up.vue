@@ -33,8 +33,6 @@ const createUser = async () => {
     <form @submit.prevent="createUser" class="flex flex-col gap-4">
       <input v-model="form.username" type="text" placeholder="username" />
       <input v-model="form.password" type="password" placeholder="password" />
-      <input v-model="form.isAdmin" type="checkbox" />
-      <button>Create user</button>
     </form>
   </AuthContainer>
 </template>
