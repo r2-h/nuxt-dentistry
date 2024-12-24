@@ -30,6 +30,7 @@ const onCloseMobileMenu = () => {
       <template #trigger>
         <Button
           class="peer-checked:*:bg-blue-600 z-50 p-3"
+          size="icon"
           tag="div"
           @action="toggleActive"
         >
@@ -38,7 +39,7 @@ const onCloseMobileMenu = () => {
       </template>
       <template #content>
         <NavBar
-          class="flex-col justify-center flex h-full gap-y-9 bg-red-300"
+          class="flex-col justify-center flex h-full gap-y-9"
           @onCloseMobileMenu="onCloseMobileMenu"
         />
       </template>
