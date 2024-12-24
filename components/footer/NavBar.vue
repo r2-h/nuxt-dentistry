@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { navItems } from "../constants"
+import { navItems } from "../constants";
 </script>
 
 <template>

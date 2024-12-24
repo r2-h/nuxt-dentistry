@@ -1,26 +1,26 @@
 <script setup lang="ts">
-import MainIcon from "../icons/MainIcon.vue"
-import Button from "../ui/Button.vue"
-import MobileMenu from "./MobileMenu.vue"
-import NavBar from "./NavBar.vue"
-import UserDropdown from "./UserDropdown.vue"
+import MainIcon from "../icons/MainIcon.vue";
+import Button from "../ui/Button.vue";
+import MobileMenu from "./MobileMenu.vue";
+import NavBar from "./NavBar.vue";
+import UserDropdown from "./UserDropdown.vue";
 
-const isActiveMobileMenu = ref(false)
+const isActiveMobileMenu = ref(false);
 
 const toggleActive = () => {
-  isActiveMobileMenu.value = !isActiveMobileMenu.value
-}
+  isActiveMobileMenu.value = !isActiveMobileMenu.value;
+};
 
 const onCloseMobileMenu = () => {
-  isActiveMobileMenu.value = false
-}
+  isActiveMobileMenu.value = false;
+};
 </script>
 
 <template>
   <header
     :class="[
-      'z-10 max-w-content rounded-lg w-full mx-auto px-5 mt-12 flex items-center justify-between',
-      'md:bg-blue-light md:px-10 md:py-4.5 md:mt-10',
+      'z-10 mx-auto mt-12 flex w-full items-center justify-between rounded-lg px-5',
+      'md:mt-10 md:bg-blue-light md:px-10 md:py-4.5',
     ]"
   >
     <MainIcon />
@@ -39,13 +39,13 @@ const onCloseMobileMenu = () => {
       </template>
       <template #content>
         <NavBar
-          class="flex-col justify-center flex h-full gap-y-9"
+          class="flex h-full flex-col justify-center gap-y-9"
           @onCloseMobileMenu="onCloseMobileMenu"
         />
       </template>
     </MobileMenu>
 
-    <div class="hidden md:flex items-center gap-x-5">
+    <div class="hidden items-center gap-x-5 md:flex">
       <UserDropdown />
       <Button> Book Now </Button>
     </div>

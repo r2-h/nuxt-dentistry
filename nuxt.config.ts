@@ -9,5 +9,5 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["@nuxt/fonts", "nuxt-auth-utils"],
-})
+  modules: ["@nuxt/fonts", "nuxt-auth-utils", "@pinia/nuxt"],
+});

@@ -104,7 +104,6 @@ export default {
       },
       maxWidth: {
         max: "90rem",
-        content: "80rem",
       },
       boxShadow: {
         userMessageCard: "0 8px 40px 0 rgba(0, 0, 0, 10%)",
@@ -130,7 +129,6 @@ export default {
         8.5: "2.125rem",
         12.5: "3.125rem",
         94: "23.5rem",
-
       },
       screens: {
         xs: "26.75rem",
@@ -138,4 +136,4 @@ export default {
     },
   },
   plugins: [],
-}
+};
