@@ -13,6 +13,7 @@ const toggleActive = () => {
 
 const onCloseMobileMenu = () => {
   isActiveMobileMenu.value = false
+  console.log(`isActiveMobileMenu->`, isActiveMobileMenu.value)
 }
 </script>
 
