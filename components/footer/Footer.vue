@@ -52,7 +52,7 @@ const { toggle } = store
     </p>
 
     <div
-      class="flex w-fit justify-between border-t border-gray-body md:border-t-0"
+      class="flex w-fit justify-between border-t border-gray-body md:w-full md:border-t-0"
     >
       <p class="hidden text-b1 text-gray-body md:block">
         All rights reserved ® dentistry.com | Terms and conditions apply!
