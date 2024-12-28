@@ -18,7 +18,7 @@ const { toggle } = store
 </script>
 
 <template>
-  <footer class="w-full md:mb-8">
+  <footer class="mt-auto w-full md:mb-8">
     <div
       class="pt-6.25rem mb-7.5 flex justify-between border-blue-dark md:mb-9 md:border-b-2 md:pb-[3.12rem] md:pt-0"
     >

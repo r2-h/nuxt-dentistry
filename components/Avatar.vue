@@ -8,7 +8,7 @@ const user = defineProps<{
 </script>
 
 <template>
-  <div class="relative size-[3.43rem]">
+  <div class="relative">
     <img :src="user.icon" alt="user icon" class="rounded-full bg-gray-200" />
     <div
       v-if="isActiveUser"

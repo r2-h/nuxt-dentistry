@@ -1,16 +1,13 @@
 <script setup lang="ts">
-import SmallUnderline from "~/components/icons/SmallUnderline.vue"
-import Underline from "~/components/icons/Underline.vue"
-import Circle from "./Circle.vue"
-import Teeth from "./Teeth.vue"
-import Button from "~/components/ui/Button.vue"
-import Avatar from "~/components/Avatar.vue"
 import InIcon from "~/components/icons/InIcon.vue"
+import Circle from "./ui/Circle.vue"
+import Teeth from "./ui/Teeth.vue"
+import Button from "~/components/ui/Button.vue"
 </script>
 
 <template>
   <section
-    class="relative mt-[3.75rem] flex h-full flex-col items-center xl:h-[36rem] xl:flex-row xl:items-start"
+    class="relative mt-[3.75rem] flex h-full grow flex-col items-center xl:h-[36rem] xl:flex-row xl:items-start"
   >
     <div class="mt-14 shrink-0 flex-grow">
       <h1 class="mb-5.5 w-full max-w-[43rem] text-h2 xl:text-h1">

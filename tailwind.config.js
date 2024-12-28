@@ -58,11 +58,11 @@ export default {
           },
         ],
         h4: [
-          "2.25rem",
+          "1.5rem",
           {
             lineHeight: "1.2",
             letterSpacing: "0",
-            fontWeight: "600",
+            fontWeight: "500",
           },
         ],
 
@@ -125,6 +125,7 @@ export default {
       spacing: {
         4.5: "1.125rem",
         5.5: "1.375rem",
+        6.5: "1.625rem",
         7.5: "1.875rem",
         8.5: "2.125rem",
         12.5: "3.125rem",

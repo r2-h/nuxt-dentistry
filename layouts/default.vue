@@ -4,7 +4,7 @@ import Header from "~/components/header/Header.vue";
 </script>
 
 <template>
-  <div class="mx-auto flex min-h-screen max-w-max flex-col px-5 lg:px-20">
+  <div class="mx-auto flex min-h-screen h-full max-w-max flex-col px-5 lg:px-20">
     <Header />
     <main class="flex flex-grow flex-col">
       <slot />
