@@ -6,7 +6,7 @@ defineProps<{
 
 <template>
   <label
-    class="relative cursor-pointer md:hidden"
+    class="relative cursor-pointer lg:hidden"
     for="mobile-menu"
     role="button"
   >

@@ -4,7 +4,7 @@ import Avatar from "../Avatar.vue"
 
 <template>
   <div>
-    <Avatar />
+    <Avatar icon="/img/ava.png" />
     <div></div>
   </div>
 </template>

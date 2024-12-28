@@ -5,16 +5,22 @@ defineEmits<{
   (e: "action"): void
 }>()
 
-const button = cva("relative inline-flex items-center  w-full justify-center", {
+const button = cva("relative inline-flex items-center justify-center", {
   variants: {
     intent: {
-      primary: "bg-blue-mid  font-semibold text-b2  text-white rounded-lg2",
+      primary:
+        "bg-blue-mid  font-semibold text-b2  text-white rounded-lg2 px-[1.87rem] h-[3.43rem] hover:bg-blue-mid/95",
       secondary: " bg-blue-dark rounded text-white",
       tertiary: "bg-white   text-blue-dark text-b3",
       danger: "bg-red-500 ",
+      iconWhite:
+        "bg-white border border-blue-mid rounded-lg2 size-[3.43rem] flex items-center justify-center grow-0 group-hover:border-blue-mid/85",
+      iconBlue:
+        "bg-blue-mid  rounded-lg2 size-[3.43rem] flex items-center justify-center grow-0 ",
+      icon: "",
     },
     size: {
-      lg: "px-[30px] h-[3.43rem]",
+      lg: "px-[1.87rem] h-[3.43rem]",
       icon: "",
     },
     disabled: {
@@ -24,11 +30,7 @@ const button = cva("relative inline-flex items-center  w-full justify-center", {
 })
 type ButtonProps = VariantProps<typeof button>
 
-const {
-  intent = "primary",
-  tag = "button",
-  size = "lg",
-} = defineProps<{
+const { intent = "primary", tag = "button" } = defineProps<{
   intent?: ButtonProps["intent"]
   size?: ButtonProps["size"]
   leftNode?: object
@@ -41,8 +43,8 @@ const {
 </script>
 
 <template>
-  <div>
-    <span v-if="loading" class="absolute flex left-1/2 -translate-x-1/2">
+  <div class="group">
+    <span v-if="loading" class="absolute left-1/2 flex -translate-x-1/2">
       <IconsLoading />
     </span>
 

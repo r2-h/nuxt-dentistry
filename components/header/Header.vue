@@ -1,37 +1,39 @@
 <script setup lang="ts">
-import MainIcon from "../icons/MainIcon.vue";
-import MobileNavBar from "../layout/MobileNavBar.vue";
-import Button from "../ui/Button.vue";
-import MobileMenu from "./MobileMenu.vue";
-import NavBar from "./NavBar.vue";
-import UserDropdown from "./UserDropdown.vue";
+import MainIcon from "../icons/MainIcon.vue"
+import MobileNavBar from "../layout/MobileNavBar.vue"
+import Button from "../ui/Button.vue"
+import MobileMenu from "./MobileMenu.vue"
+import NavBar from "./NavBar.vue"
+import UserDropdown from "./UserDropdown.vue"
 
-const isActiveMobileMenu = ref(false);
+const isActiveMobileMenu = ref(false)
 
 const toggleActive = () => {
-  isActiveMobileMenu.value = !isActiveMobileMenu.value;
-};
+  isActiveMobileMenu.value = !isActiveMobileMenu.value
+}
 
 const onCloseMobileMenu = () => {
-  isActiveMobileMenu.value = false;
-};
+  isActiveMobileMenu.value = false
+}
 </script>
 
 <template>
   <header
     :class="[
       'z-10 mx-auto mt-12 flex w-full items-center justify-between rounded-lg px-5',
-      'md:mt-10 md:bg-blue-light md:px-10 md:py-4.5',
+      'lg:mt-10 lg:bg-blue-light lg:px-10 lg:py-4.5',
     ]"
   >
-    <MainIcon />
-    <NavBar class="hidden md:flex" />
+    <NuxtLink to="/">
+      <MainIcon />
+    </NuxtLink>
+    <NavBar class="hidden lg:flex" />
 
     <MobileMenu :isActive="isActiveMobileMenu">
       <template #trigger>
         <Button
           :_class="`${isActiveMobileMenu && 'bg-blue-600 '} p-3 z-30`"
-          size="icon"
+          intent="iconBlue"
           tag="div"
           @action="toggleActive"
         >
@@ -43,9 +45,11 @@ const onCloseMobileMenu = () => {
       </template>
     </MobileMenu>
 
-    <div class="hidden items-center gap-x-5 md:flex">
+    <div class="hidden items-center gap-x-5 lg:flex">
       <UserDropdown />
-      <Button> Book Now </Button>
+      <NuxtLink to="/contacts">
+        <Button tag="div"> Book Now </Button>
+      </NuxtLink>
     </div>
   </header>
 </template>

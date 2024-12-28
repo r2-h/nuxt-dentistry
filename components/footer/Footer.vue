@@ -18,7 +18,7 @@ const { toggle } = store
 </script>
 
 <template>
-  <div class="w-full md:mb-8">
+  <footer class="w-full md:mb-8">
     <div
       class="pt-6.25rem mb-7.5 flex justify-between border-blue-dark md:mb-9 md:border-b-2 md:pb-[3.12rem] md:pt-0"
     >
@@ -29,8 +29,7 @@ const { toggle } = store
         <template #trigger>
           <Button
             :_class="`${isActiveMobileMenu && 'bg-blue-600 '}  z-30`"
-            size="icon"
-            tag="div"
+            intent="icon"
             @action="toggle"
           >
             <BurgerMenuFooterIcon />
@@ -90,5 +89,5 @@ const { toggle } = store
     >
       Dentistry by M.Aze, CopyRights are protected
     </div>
-  </div>
+  </footer>
 </template>
