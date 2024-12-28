@@ -3,6 +3,8 @@ import InIcon from "~/components/icons/InIcon.vue"
 import Circle from "./ui/Circle.vue"
 import Teeth from "./ui/Teeth.vue"
 import Button from "~/components/ui/Button.vue"
+import Underline from "~/components/icons/Underline.vue"
+import SmallUnderline from "~/components/icons/SmallUnderline.vue"
 </script>
 
 <template>

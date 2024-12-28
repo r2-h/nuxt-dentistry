@@ -2,7 +2,7 @@
 import ArrowRight from "~/components/icons/ArrowRight.vue"
 
 defineProps<{
-  icon: Object
+  icon: any
   title: string
   description: string
 }>()
