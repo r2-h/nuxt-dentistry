@@ -13,6 +13,8 @@ const button = cva("relative inline-flex items-center justify-center", {
       secondary: " bg-blue-dark rounded text-white",
       tertiary: "bg-white   text-blue-dark text-b3",
       danger: "bg-red-500 ",
+      iconWhiteSquare:
+        "bg-white border size-[3.43rem] flex items-center justify-center  h-11 w-24 border-none",
       iconWhite:
         "bg-white border border-blue-mid rounded-lg2 size-[3.43rem] flex items-center justify-center grow-0 group-hover:border-blue-mid/85",
       iconBlue:

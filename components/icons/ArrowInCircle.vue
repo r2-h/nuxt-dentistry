@@ -1,3 +1,4 @@
+<
 <template>
   <svg
     width="24"
