@@ -7,19 +7,19 @@ import SmallUnderline from "~/components/icons/SmallUnderline.vue"
 
 <template>
   <div
-    class="mb-[3.3rem] mt-14 h-full w-full max-w-[34rem] xl:max-w-[44.7rem] flex-grow xl:shrink-0"
+    class="mb-[3.3rem] mt-14 h-full w-full max-w-[34rem] flex-grow lg:max-w-[44.7rem] lg:shrink-0"
   >
-    <h1 class="mb-5.5 text-h2 capitalize xl:text-h1">
+    <h1 class="mb-5.5 text-h2 capitalize lg:text-h1">
       Get ready for your best ever
       <span class="relative">
         Dental
         <span class="relative"
           >Experience!
           <SmallUnderline
-            class="xl:w-100 absolute left-0 right-0 mx-auto w-56 sm:w-full xl:hidden"
+            class="lg:w-100 absolute left-0 right-0 mx-auto w-56 sm:w-full lg:hidden"
           />
         </span>
-        <Underline class="absolute bottom-0 right-5 hidden xl:block" />
+        <Underline class="absolute bottom-0 right-5 hidden lg:block" />
       </span>
     </h1>
     <p class="mb-10 max-w-[33.1rem] text-b1 text-gray-body">
@@ -28,10 +28,10 @@ import SmallUnderline from "~/components/icons/SmallUnderline.vue"
       yourself.
     </p>
     <div class="mb-10 flex items-center">
-      <NuxtLink to="/contacts" class="mr-4 w-full max-w-[14.2rem] xl:mr-5.5">
+      <NuxtLink to="/contacts" class="mr-4 w-full max-w-[14.2rem] lg:mr-5.5">
         <Button tag="div" class="w-full">
-          <span class="hidden xl:block">Book an appointment</span>
-          <span class="block xl:hidden">Get Started</span>
+          <span class="hidden lg:block">Book an appointment</span>
+          <span class="block lg:hidden">Get Started</span>
         </Button>
       </NuxtLink>
       <Button
@@ -49,7 +49,7 @@ import SmallUnderline from "~/components/icons/SmallUnderline.vue"
       </div>
     </div>
     <div
-      class="flex h-[7.3rem] max-w-[24rem] flex-col justify-between rounded-xl px-4 py-3.5 pt-3 shadow-md xl:mb-0"
+      class="flex h-[7.3rem] max-w-[24rem] flex-col justify-between rounded-lg px-4 py-3.5 pt-3 shadow-md lg:mb-0"
     >
       <div class="flex items-center">
         <Avatar class="mr-2 size-10" icon="/img/doc1.png" />
