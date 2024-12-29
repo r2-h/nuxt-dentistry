@@ -19,8 +19,10 @@
     "drizzle-orm": "^0.38.2",
     "nuxt": "^3.14.1592",
     "nuxt-auth-utils": "^0.5.7",
+    "nuxt-swiper": "^2.0.0",
     "pinia": "^2.3.0",
     "postgres": "^3.4.5",
+    "swiper": "^11.1.15",
     "tailwind-merge": "^2.6.0",
     "vue": "latest",
     "vue-router": "latest"

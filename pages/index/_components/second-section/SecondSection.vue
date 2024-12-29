@@ -2,7 +2,7 @@
 import Teeth2 from "~/components/icons/Teeth2.vue"
 import Mouth from "~/components/icons/Mouth.vue"
 import Implant from "~/components/icons/Implant.vue"
-import Card from "./ui/Card.vue"
+import Card from "./Card.vue"
 
 const items = [
   {
@@ -39,3 +39,5 @@ const items = [
     />
   </section>
 </template>
+
+

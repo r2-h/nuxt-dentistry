@@ -42,7 +42,7 @@ export default {
           },
         ],
         h2: [
-          "2.62rem",
+          "2.5rem",
           {
             lineHeight: "1.25",
             letterSpacing: "0",

@@ -9,5 +9,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["@nuxt/fonts", "nuxt-auth-utils", "@pinia/nuxt"],
-});
+  modules: ["@nuxt/fonts", "nuxt-auth-utils", "@pinia/nuxt", "nuxt-swiper"],
+  fonts: {
+    defaults: {
+      weights: [400, 500, 600, 700],
+    },
+  },
+})

@@ -6,3 +6,20 @@ body {
   font-family: General Sans;
 }
 
+@keyframes turn {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes turnBack {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
