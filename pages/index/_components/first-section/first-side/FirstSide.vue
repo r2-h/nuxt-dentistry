@@ -25,7 +25,7 @@ import SmallUnderline from "~/components/icons/SmallUnderline.vue"
     <p class="mb-10 max-w-[33.1rem] text-b1 text-gray-body">
       We use only the best quality materials on the market in order to provide
       the best products to our patients, So don’t worry about anything and book
-      yourself.
+      yourself
     </p>
     <div class="mb-10 flex items-center">
       <NuxtLink to="/contacts" class="mr-4 w-full max-w-[14.2rem] lg:mr-5.5">
