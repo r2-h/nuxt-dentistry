@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SERVICES } from "~/shared/constants"
+import { SERVICES } from "~/constants"
 import Card from "./Card.vue"
 import Carousel from "./Carousel.vue"
 </script>

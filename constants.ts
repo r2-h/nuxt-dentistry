@@ -1,6 +1,6 @@
-import Implant from "./icons/Implant.vue"
-import Mouth from "./icons/Mouth.vue"
-import Teeth2 from "./icons/Teeth2.vue"
+import Implant from "./components/icons/Implant.vue"
+import Mouth from "./components/icons/Mouth.vue"
+import Teeth2 from "./components/icons/Teeth2.vue"
 
 export type Services = {
   icon: Object

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import ArrowInCircle from "~/components/icons/ArrowInCircle.vue"
-import type { Services } from "~/shared/constants"
+import type { Services } from "~/constants"
 
 const props = defineProps<Services>()
 </script>

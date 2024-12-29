@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Arrow from "~/components/icons/Arrow.vue"
 import Button from "~/components/ui/Button.vue"
-import { SERVICES } from "~/shared/constants"
+import { SERVICES } from "~/constants"
 import Card from "./Card.vue"
 
 const containerRef = ref(null)
