@@ -10,7 +10,7 @@ import InnerOrbit from "./InnerOrbit.vue"
     <img
       src="/img/main-picture.png"
       alt="doctor"
-      class="z-10 mr-28 mt-12 h-[26rem] object-cover xl:-mb-[5.5rem] xl:h-[32rem]"
+      class="z-10 mr-20 mt-12 h-[23rem] object-cover xl:-mb-[5.5rem] xl:h-[32rem]"
     />
     <OuterOrbit />
     <InnerOrbit />

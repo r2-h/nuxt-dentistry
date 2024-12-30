@@ -11,7 +11,7 @@ const swiper = useSwiper(containerRef)
 </script>
 
 <template>
-  <div class="max-w-[25rem]">
+  <div class="w-full max-w-[25rem] px-5">
     <ClientOnly>
       <swiper-container ref="containerRef">
         <swiper-slide v-for="(slide, idx) in slides" :key="idx">

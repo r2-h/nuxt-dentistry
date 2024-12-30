@@ -31,7 +31,7 @@ import SmallUnderline from "~/components/icons/SmallUnderline.vue"
       <NuxtLink to="/contacts" class="mr-4 w-full max-w-[14.2rem] lg:mr-5.5">
         <Button tag="div" class="w-full">
           <span class="hidden lg:block">Book an appointment</span>
-          <span class="block lg:hidden">Get Started</span>
+          <span class="block text-center lg:hidden">Get Started</span>
         </Button>
       </NuxtLink>
       <Button
@@ -43,9 +43,9 @@ import SmallUnderline from "~/components/icons/SmallUnderline.vue"
       >
         <IconsPhone class="text-blue-mid group-hover:text-blue-mid/90" />
       </Button>
-      <div class="shrink-0 space-y-1">
+      <div class="space-y-1">
         <p class="text-b3 font-semibold text-blue-mid">Dental 24H Emergency</p>
-        <p class="text-b3">0900-78601</p>
+        <p class="text-b3 font-medium">0900-78601</p>
       </div>
     </div>
     <div

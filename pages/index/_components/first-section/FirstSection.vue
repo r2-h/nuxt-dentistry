@@ -5,7 +5,7 @@ import SecondSide from "./second-side/SecondSide.vue"
 
 <template>
   <section
-    class="relative mt-[3.75rem] flex h-full w-full flex-col items-center justify-between xl:flex-row"
+    class="relative lg:mt-[3.75rem] flex h-full w-full flex-col items-center justify-between xl:flex-row"
   >
     <FirstSide />
     <SecondSide />

@@ -6,7 +6,7 @@ import Carousel from "./Carousel.vue"
 
 <template>
   <section
-    class="relative -mx-5 flex flex-grow items-start justify-center gap-[1.5rem] rounded-lg2 bg-blue-light px-[2.1rem] py-[3.1rem] pb-[7.1rem] lg:mx-0 lg:pb-[3.1rem]"
+    class="relative -mx-5 flex flex-grow items-start justify-center gap-[1.5rem] rounded-lg2 bg-blue-light py-[3.1rem] pb-[7.1rem] lg:mx-0 lg:px-[1.5rem] lg:pb-[3.1rem]"
   >
     <Card
       v-for="item in SERVICES"
@@ -16,6 +16,6 @@ import Carousel from "./Carousel.vue"
       :title="item.title"
       :description="item.description"
     />
-    <Carousel class="lg:hidden" />
+    <Carousel class="lg:hidden " />
   </section>
 </template>

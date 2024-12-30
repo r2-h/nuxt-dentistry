@@ -24,7 +24,7 @@ import Teeth from "./Teeth.vue"
   --d: 8deg; /* control the distance between dashes */
   --t: 3px; /* control the thickness of border*/
   --c: linear-gradient(180deg, #1376f893, white);
-  --size: 24rem;
+  --size: 21.5rem;
   --half-size: calc(var(--size) / 2);
   --offset: 15px;
 
