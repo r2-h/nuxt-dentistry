@@ -6,7 +6,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="w-full max-w-[34rem] bg-red-300">
+  <div class="w-full max-w-[34rem]">
     <h2 class="mb-4.5 text-h2 capitalize">
       {{ props.title }}
     </h2>

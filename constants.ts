@@ -3,7 +3,7 @@ import Mouth from "./components/icons/Mouth.vue"
 import Teeth2 from "./components/icons/Teeth2.vue"
 
 export type Services = {
-  icon: Object
+  icon: object
   title: string
   description: string
 }

@@ -16,6 +16,6 @@ import Carousel from "./Carousel.vue"
       :title="item.title"
       :description="item.description"
     />
-    <Carousel class="lg:hidden " />
+    <Carousel class="lg:hidden" />
   </section>
 </template>

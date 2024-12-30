@@ -7,5 +7,7 @@ import ThirdSection from "./_components/third-section/ThirdSection.vue"
 <template>
   <FirstSection />
   <SecondSection />
-  <ThirdSection class="mt-[6.2rem] lg:mt-[9.6rem]" />
+  <ThirdSection
+    class="mx-auto mt-[6.1rem] w-full max-w-[71.2rem] lg:mt-[7.1rem]"
+  />
 </template>

@@ -2,18 +2,18 @@
 import Button from "~/components/ui/Button.vue"
 import Container from "../Container.vue"
 import TextSide from "../TextSide.vue"
+import PhotoSide from "../PhotoSide.vue"
 </script>
 
 <template>
   <Container>
     <TextSide
-      title="Leave your worries at the door and enjoy a healthier, more precise smile"
+      class="mt-auto"
+      title="We’re welcoming new patients and can’t wait to meet you."
       description="We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself."
     >
       <Button>Book an appointment</Button>
     </TextSide>
-    <div class="h-[22.6rem] w-full max-w-[25.8rem] bg-green-200">
-      sdfsdgsdgs
-    </div>
+    <PhotoSide imageSrc="/img/lending1.png" />
   </Container>
 </template>

@@ -2,7 +2,7 @@
 import ArrowInCircle from "~/components/icons/ArrowInCircle.vue"
 import type { Services } from "~/constants"
 
-const props = defineProps<Services>()
+const { description, icon, title } = defineProps<Services>()
 </script>
 
 <template>
@@ -12,12 +12,13 @@ const props = defineProps<Services>()
     <div
       class="mx-auto mb-4.5 grid aspect-square size-[4.37rem] place-content-center rounded-full bg-blue-sky"
     >
-      <component :is="props.icon" />
+      <!-- TODO Vue received a Component that was made a reactive object. -->
+      <component :is="icon" />
     </div>
 
-    <h4 class="mb-3.5 text-center text-h4 text-blue-dark">{{ props.title }}</h4>
+    <h4 class="mb-3.5 text-center text-h4 text-blue-dark">{{ title }}</h4>
     <p class="mb-3.5 line-clamp-4 text-b1 text-gray-body">
-      {{ props.description }}
+      {{ description }}
     </p>
     <NuxtLink
       to="/services"
