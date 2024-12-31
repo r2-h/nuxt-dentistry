@@ -12,7 +12,7 @@ const { description, icon, title } = defineProps<Services>()
     <div
       class="mx-auto mb-4.5 grid aspect-square size-[4.37rem] place-content-center rounded-full bg-blue-sky"
     >
-      <!-- TODO Vue received a Component that was made a reactive object. -->
+
       <component :is="icon" />
     </div>
 
