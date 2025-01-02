@@ -5,3 +5,4 @@ export const navItems = [
   { id: "4", title: "About", route: "/about" },
   { id: "5", title: "Contacts", route: "/contacts" },
 ]
+

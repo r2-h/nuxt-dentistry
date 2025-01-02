@@ -14,7 +14,9 @@ const button = cva("relative inline-flex items-center justify-center", {
       tertiary: "bg-white   text-blue-dark text-b3",
       danger: "bg-red-500 ",
       iconWhiteSquare:
-        "bg-white border size-[3.43rem] flex items-center justify-center  h-11 w-24 border-none",
+        "bg-white border  flex items-center justify-center  h-11 w-24 border-none",
+      iconDarkBlueSquare:
+        "border  flex items-center justify-center  h-11 w-24 border-none bg-blue-dark",
       iconWhite:
         "bg-white border border-blue-mid rounded-lg2 size-[3.43rem] flex items-center justify-center grow-0 group-hover:border-blue-mid/85",
       iconBlue:
@@ -26,7 +28,7 @@ const button = cva("relative inline-flex items-center justify-center", {
       icon: "",
     },
     disabled: {
-      true: "bg-gray-300 cursor-not-allowed",
+      true: "bg-gray-300 pointer-events-none",
     },
   },
 })
