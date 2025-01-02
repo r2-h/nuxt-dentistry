@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import LineSmallest from "~/components/icons/LineSmallest.vue"
 import ShieldDone from "~/components/icons/ShieldDone.vue"
-import SmallUnderline from "~/components/icons/SmallUnderline.vue"
 import Button from "~/components/ui/Button.vue"
 </script>
 

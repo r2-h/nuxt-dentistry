@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import ArrowInCircle from "~/components/icons/ArrowInCircle.vue"
-import type { Services } from '~/shared/constants/services';
 
-
-const { description, icon, title } = defineProps<Services>()
+const { description, icon, title } = defineProps<any>() // TODO: fix type
 </script>
 
 <template>
@@ -13,7 +11,6 @@ const { description, icon, title } = defineProps<Services>()
     <div
       class="mx-auto mb-4.5 grid aspect-square size-[4.37rem] place-content-center rounded-full bg-blue-sky"
     >
-
       <component :is="icon" />
     </div>
 
