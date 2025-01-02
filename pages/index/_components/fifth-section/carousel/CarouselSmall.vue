@@ -7,11 +7,6 @@ import { HAPPY_CLIENTS } from "../constants"
 const containerRef = ref(null)
 
 const swiper = useSwiper(containerRef)
-onMounted(() => {
-  // Access Swiper instance
-  // Read more about Swiper instance: https://swiperjs.com/swiper-api#methods--properties
-  console.log(swiper.instance)
-})
 </script>
 
 <template>
