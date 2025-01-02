@@ -6,6 +6,11 @@ import Teeth2 from "~/components/icons/Teeth2.vue"
 import Mouth from "~/components/icons/Mouth.vue"
 import Implant from "~/components/icons/Implant.vue"
 
+export type Services = {
+  icon: object
+  title: string
+  description: string
+}
 const SERVICES = [
   {
     icon: markRaw(Teeth2),

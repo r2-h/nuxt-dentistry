@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import ArrowInCircle from "~/components/icons/ArrowInCircle.vue"
+import type { Services } from "./Carousel.vue"
 
-const { description, icon, title } = defineProps<any>() // TODO: fix type
+const { description, icon, title } = defineProps<Services>()
 </script>
 
 <template>
