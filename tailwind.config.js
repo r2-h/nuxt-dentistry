@@ -26,6 +26,7 @@ export default {
         },
         gray: {
           body: "#3c4959",
+          border: "#CFCFCF",
         },
         white: "#fff",
         success: "#17bf28",
