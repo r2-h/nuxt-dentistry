@@ -39,6 +39,7 @@ import Underline from "~/components/icons/Underline.vue"
       <Accordion
         answer="Lorem ipsum dolor sit amet consectetur. Convallis cras placerat dignissim aliquam massa. Aliquet volutpat rhoncus in convallis consectetur. Cras adipiscing volutpat non hac enim odio enim."
         question="Can I see who reads my email campaigns?"
+				last
       />
     </div>
   </div>
