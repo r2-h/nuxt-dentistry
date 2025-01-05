@@ -9,7 +9,7 @@ defineProps<{
 
 <template>
   <label
-    class="inline-flex items-center cursor-pointer gap-1.5 select-none mt-7"
+    class="inline-flex items-center cursor-pointer gap-1.5 select-none "
   >
     <div class="flex items-center relative">
       <input

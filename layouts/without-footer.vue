@@ -1,7 +1,9 @@
 <template>
-  <div class="flex flex-col min-h-screen max-w-max mx-auto">
+  <div
+    class="mx-auto flex h-full min-h-screen max-w-max flex-col px-5 lg:px-10"
+  >
     <Header />
-    <main class="flex-grow flex flex-col">
+    <main class="flex flex-grow flex-col">
       <slot />
     </main>
   </div>

@@ -27,6 +27,7 @@ export default {
         gray: {
           body: "#3c4959",
           border: "#CFCFCF",
+          borderInput: "#AFAFAF",
         },
         white: "#fff",
         success: "#17bf28",
@@ -129,6 +130,7 @@ export default {
         6.5: "1.625rem",
         7.5: "1.875rem",
         8.5: "2.125rem",
+        9.5: "2.375rem",
         12.5: "3.125rem",
         94: "23.5rem",
       },

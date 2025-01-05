@@ -4,7 +4,6 @@ import MobileNavBar from "../layout/MobileNavBar.vue"
 import Button from "../ui/Button.vue"
 import MobileMenu from "./MobileMenu.vue"
 import NavBar from "./NavBar.vue"
-import UserDropdown from "./UserDropdown.vue"
 
 const isActiveMobileMenu = ref(false)
 
@@ -19,10 +18,7 @@ const onCloseMobileMenu = () => {
 
 <template>
   <header
-    :class="[
-      'z-10 mx-auto mt-12 flex w-full items-center justify-between rounded-lg px-5',
-      'lg:mt-10 lg:bg-blue-light lg:px-10 lg:py-4.5',
-    ]"
+    class="z-10 mx-auto mt-12 flex w-full items-center justify-between rounded-lg px-5 lg:mt-10 lg:bg-blue-light lg:px-10 lg:py-4.5"
   >
     <NuxtLink to="/">
       <MainIcon />
@@ -45,10 +41,12 @@ const onCloseMobileMenu = () => {
       </template>
     </MobileMenu>
 
-    <div class="hidden items-center gap-x-5 lg:flex">
-      <UserDropdown />
-      <NuxtLink to="/contacts">
-        <Button tag="div"> Book Now </Button>
+    <div class="hidden items-center gap-x-7 lg:flex">
+      <NuxtLink to="/log-in" class="text-b2 font-semibold text-blue-dark">
+        Log In
+      </NuxtLink>
+      <NuxtLink to="/sign-up">
+        <Button tag="div"> Sign Up </Button>
       </NuxtLink>
     </div>
   </header>

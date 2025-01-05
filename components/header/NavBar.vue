@@ -13,7 +13,7 @@ defineEmits<{
         <NuxtLink
           :to="item.route"
           @click="$emit('onCloseMobileMenu')"
-          exactActiveClass="font-semibold"
+          exactActiveClass="font-semibold "
           class="text-blue-dark"
         >
           {{ item.title }}

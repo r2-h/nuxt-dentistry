@@ -10,6 +10,8 @@ const button = cva("relative inline-flex items-center justify-center", {
     intent: {
       primary:
         "bg-blue-mid  font-semibold text-b2  text-white rounded-lg2 px-[1.87rem] h-[3.43rem] hover:bg-blue-mid/95",
+      ghostAuth:
+        "text-b3 font-semibold lg:font-medium lg:border rounded-lg2 border-blue-dark lg:w-full lg:h-[3.75rem]",
       secondary: " bg-blue-dark rounded text-white",
       tertiary: "bg-white   text-blue-dark text-b3",
       danger: "bg-red-500 ",
@@ -23,10 +25,6 @@ const button = cva("relative inline-flex items-center justify-center", {
         "bg-blue-mid  rounded-lg2 size-[3.43rem] flex items-center justify-center grow-0 ",
       icon: "",
     },
-    size: {
-      lg: "px-[1.87rem] h-[3.43rem]",
-      icon: "",
-    },
     disabled: {
       true: "bg-gray-300 pointer-events-none",
     },
@@ -36,7 +34,6 @@ type ButtonProps = VariantProps<typeof button>
 
 const { intent = "primary", tag = "button" } = defineProps<{
   intent?: ButtonProps["intent"]
-  size?: ButtonProps["size"]
   leftNode?: object
   rightNode?: object
   loading?: boolean
@@ -61,11 +58,7 @@ const { intent = "primary", tag = "button" } = defineProps<{
       v-bind="$attrs"
       :is="tag"
       @click="$emit('action')"
-      :class="[
-        button({ intent, disabled, size }),
-        _class,
-        loading && 'invisible',
-      ]"
+      :class="[button({ intent, disabled }), _class, loading && 'invisible']"
     >
       <slot />
     </component>
