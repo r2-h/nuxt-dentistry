@@ -39,7 +39,11 @@ const onSubmit = async () => {
     console.log(toRaw(formErrors))
   }
   console.log(toRaw(data))
-  const { data: response, status } = await useFetch("/api/sign-up", {
+  const {
+    data: response,
+    status,
+    error: responseError,
+  } = await useFetch("/api/sign-up", {
     method: "POST",
     body: { ...data },
   })
@@ -82,7 +86,7 @@ const isInvalid = (property: FormFields) => {
             @blur="onBlur('username')"
             :aria-invalid="isInvalid('username')"
             required
-            :class="`border-gray-borderInput h-[3.75rem] w-full rounded-md border px-5 lg:rounded-lg2 ${formErrors.username && 'border-red-500'} ${formState.username ? 'pl-5' : 'pl-12'}`"
+            :class="`h-[3.75rem] w-full rounded-md border border-gray-borderInput px-5 lg:rounded-lg2 ${formErrors.username && 'border-red-500'} ${formState.username ? 'pl-5' : 'pl-12'}`"
           />
         </div>
         <small v-if="formErrors.username" class="text-red-500">
@@ -102,7 +106,7 @@ const isInvalid = (property: FormFields) => {
             @blur="onBlur('password')"
             :aria-invalid="isInvalid('password')"
             required
-            :class="`border-gray-borderInput h-[3.75rem] w-full rounded-md border pr-5 lg:rounded-lg2 ${formErrors.password && 'border-red-500'} ${formState.password ? 'pl-5' : 'pl-12'}`"
+            :class="`h-[3.75rem] w-full rounded-md border border-gray-borderInput pr-5 lg:rounded-lg2 ${formErrors.password && 'border-red-500'} ${formState.password ? 'pl-5' : 'pl-12'}`"
           />
         </div>
         <small v-if="formErrors.password" class="text-red-500"
@@ -123,7 +127,7 @@ const isInvalid = (property: FormFields) => {
             @blur="onBlur('confirmPassword')"
             :aria-invalid="isInvalid('confirmPassword')"
             required
-            :class="`border-gray-borderInput h-[3.75rem] w-full rounded-md border px-5 lg:rounded-lg2 ${formErrors.confirmPassword && 'border-red-500'} ${formState.confirmPassword ? 'pl-5' : 'pl-12'}`"
+            :class="`h-[3.75rem] w-full rounded-md border border-gray-borderInput px-5 lg:rounded-lg2 ${formErrors.confirmPassword && 'border-red-500'} ${formState.confirmPassword ? 'pl-5' : 'pl-12'}`"
           />
         </div>
         <small v-if="formErrors.confirmPassword" class="text-red-500">
