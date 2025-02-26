@@ -110,8 +110,11 @@ import Teeth from "./Teeth.vue"
     transform: rotate(130deg);
     opacity: 0.8;
   }
-  40% {
+  20% {
     opacity: 0.1;
+  }
+  40% {
+    opacity: 0;
   }
   90% {
     opacity: 1;
@@ -125,16 +128,19 @@ import Teeth from "./Teeth.vue"
 @keyframes third {
   from {
     transform: rotate(220deg);
-    opacity: 0.4;
+    opacity: 0.2;
+  }
+  10% {
+    opacity: 0;
   }
   20% {
-    opacity: 0.1;
+    opacity: 0;
   }
-  70% {
+  80% {
     opacity: 1;
   }
   to {
-    opacity: 0.4;
+    opacity: 0.2;
     transform: rotate(580deg);
   }
 }

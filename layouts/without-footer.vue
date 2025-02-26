@@ -3,7 +3,7 @@
     class="mx-auto flex h-full min-h-screen max-w-max flex-col px-5 lg:px-10"
   >
     <Header />
-    <main class="flex flex-grow flex-col">
+    <main class="flex grow flex-col">
       <slot />
     </main>
   </div>

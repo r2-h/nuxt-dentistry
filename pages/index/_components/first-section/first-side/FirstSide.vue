@@ -7,7 +7,7 @@ import SmallUnderline from "~/components/icons/SmallUnderline.vue"
 
 <template>
   <div
-    class="mb-[3.3rem] mt-14 h-full w-full max-w-[34rem] flex-grow lg:max-w-[44.7rem] lg:shrink-0"
+    class="mb-[3.3rem] mt-14 h-full w-full max-w-[34rem] grow lg:max-w-[44.7rem] lg:shrink-0"
   >
     <h1 class="mb-5.5 text-h2 capitalize lg:text-h1">
       Get ready for your best ever

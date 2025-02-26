@@ -13,21 +13,21 @@ defineProps<{
 
 <template>
   <div
-    :class="`text-b1 ${isOpen && 'my-0.5 rounded-lg2 bg-blue-mid px-6 py-5 text-white'}`"
+    :class="`text-b1 ${isOpen && 'rounded-lg2 bg-blue-mid my-0.5 px-6 py-5 text-white'}`"
   >
     <button
-      :class="`flex w-full items-start justify-between gap-2 pl-2.5 text-start ${isOpen ? 'pl-0 pt-0' : 'pb-7.5 pt-7.5'}`"
+      :class="`flex w-full cursor-pointer items-start justify-between gap-2 text-start ${isOpen ? 'pl-0 pt-2 text-black' : 'pb-7.5 pt-7.5 pl-2.5'}`"
       @click="isOpen = !isOpen"
     >
       <div class="flex items-start">
         <span
-          :class="`ml-2.5 mr-2.5 mt-3 block size-1 shrink-0 rounded-full font-medium ${isOpen ? 'ml-0 bg-white' : 'bg-black'}`"
+          :class="`mr-2.5 mt-3 block size-1 shrink-0 rounded-full bg-black font-medium ${isOpen ? 'ml-0' : 'ml-2.5'}`"
         />
         {{ question }}
       </div>
       <component
         :is="isOpen ? MinusInCircle : PlusInCircle"
-        :class="`mt-1 shrink-0 !text-inherit ${isOpen && '-mr-2.5'}`"
+        :class="`text-inherit! mr-6 mt-1 shrink-0 ${isOpen && '!mr-0'}`"
       />
     </button>
     <hr v-if="!last" :class="`${isOpen && 'my-2.5'}`" />

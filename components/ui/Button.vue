@@ -12,7 +12,7 @@ const button = cva("relative inline-flex items-center justify-center", {
         "bg-blue-mid  font-semibold text-b2  text-white rounded-lg2 px-[1.87rem] h-[3.43rem] hover:bg-blue-mid/95",
       ghostAuth:
         "text-b3 font-semibold lg:font-medium lg:border rounded-lg2 border-blue-dark lg:w-full lg:h-[3.75rem]",
-      secondary: " bg-blue-dark rounded text-white",
+      secondary: " bg-blue-dark rounded-sm text-white",
       tertiary: "bg-white   text-blue-dark text-b3",
       danger: "bg-red-500 ",
       iconWhiteSquare:

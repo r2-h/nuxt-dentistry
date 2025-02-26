@@ -26,7 +26,7 @@ const handleInput = (event: Event) => {
         @input="handleInput"
         v-bind="$attrs"
         :type="type"
-        class="rounded-md p-2 text-white bg-blue-950 border border-white focus:border-white outline-none pr-10 pl-4"
+        class="rounded-md p-2 text-white bg-blue-950 border border-white focus:border-white outline-hidden pr-10 pl-4"
         :placeholder="placeholder"
       />
       <component

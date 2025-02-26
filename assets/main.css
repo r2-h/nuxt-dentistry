@@ -1,6 +1,100 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+
+.dsf {
+  color: #4ebbee
+}
+
+@theme {
+  --font-general-sans: General Sans;
+  --font-poppins: Poppins;
+
+  --color-blue-mid: #1376f8;
+  --color-blue-dark: #011632;
+  --color-blue-sky: #4ebbee;
+  --color-blue-light: #e6f6fe;
+
+  --color-green-success: #17bf28;
+
+  --color-gray-body: #3c4959;
+  --color-gray-border: #cfcfcf;
+  --color-gray-border-input: #afafaf;
+
+  --color-white: #fff;
+  --color-success: #17bf28;
+  --color-warnint: #ec942c;
+  --color-error: #e52323;
+
+  --text-h1: 3.875rem;
+  --text-h1--line-height: 1.2;
+  --text-h1--letter-spacing: -2%;
+  --text-h1--font-weight: 600;
+  --text-h2: 2.5rem;
+  --text-h2--line-height: 1.25;
+  --text-h2--letter-spacing: 0;
+  --text-h2--font-weight: 600;
+  --text-h3: 2.25rem;
+  --text-h3--line-height: 1.25;
+  --text-h3--letter-spacing: 0;
+  --text-h3--font-weight: 600;
+  --text-h4: 1.5rem;
+  --text-h4--line-height: 1.2;
+  --text-h4--letter-spacing: 0;
+  --text-h4--font-weight: 500;
+  --text-b1: 1.125rem;
+  --text-b1--line-height: 1.55;
+  --text-b1--letter-spacing: 1.5%;
+  --text-b1--font-weight: 400;
+  --text-b2: 1rem;
+  --text-b2--line-height: 1.55;
+  --text-b2--letter-spacing: 1.5%;
+  --text-b2--font-weight: 400;
+  --text-b3: 0.875rem;
+  --text-b3--line-height: 1.55;
+  --text-b3--letter-spacing: 2%;
+  --text-b3--font-weight: 400;
+  --text-b4: 0.75rem;
+  --text-b4--line-height: 1.55;
+  --text-b4--letter-spacing: 1.5%;
+  --text-b4--font-weight: 400;
+
+  --container-max: 90rem;
+
+  --shadow-user-message-card: 0 8px 40px 0 rgba(0, 0, 0, 10%);
+  --shadow-first-screen-circle: 0 4px 4px 0 rgba(0, 0, 0, 10%);
+
+  --radius-lg2: 0.625rem;
+
+  --border-width-0: 0;
+  --border-width-2: 2px;
+  --border-width-3: 3px;
+  --border-width-4: 4px;
+  --border-width: 1px;
+
+  --breakpoint-xs: 26.75rem;
+
+  --animate-spin-slow: spin 100s linear infinite;
+  --animate-spin-slow-reverse: spin-reverse 100s linear infinite;
+
+  @keyframes spin-reverse {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
 
 html {
   scrollbar-gutter: stable;

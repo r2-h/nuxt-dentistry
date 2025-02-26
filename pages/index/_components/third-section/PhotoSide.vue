@@ -18,6 +18,6 @@ const { imageSrc } = defineProps<{ imageSrc: string }>()
   width: 100%;
   max-width: 25.8rem;
   border-radius: 0.625rem;
-  background: linear-gradient(45deg, white, theme("colors.blue.sky"));
+  background: linear-gradient(45deg, white, var(--color-blue-sky));
 }
 </style>

@@ -15,7 +15,7 @@ defineProps<{
     <div
       :class="
         cn(
-          'fixed inset-0 z-10 hidden h-full w-full bg-black/50 backdrop-blur-sm',
+          'fixed inset-0 z-10 hidden h-full w-full bg-black/50 backdrop-blur-xs',
           isActive && 'block'
         )
       "
